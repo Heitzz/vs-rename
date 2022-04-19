@@ -1,0 +1,21 @@
+name: "vs-rename"
+description: "Renames your visual studio project via ModernRonin.ProjectRenamer"
+
+inputs:
+  oldName:
+    description: "Old project name"
+    required: true
+  newName:
+    description: "New project name"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.oldName }}
+    - ${{ inputs.newName }}
+
+branding:
+  icon: 'check'
+  color: 'purple'
