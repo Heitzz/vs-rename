@@ -13,4 +13,4 @@ RUN dotnet tool install ModernRonin.ProjectRenamer --tool-path .
 
 ADD entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["sh", "/entrypoint.sh"]
+ENTRYPOINT ["bash", "/entrypoint.sh"]
