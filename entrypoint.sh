@@ -1,4 +1,3 @@
-
 #!/bin/bash -l
 
 # oldName = $1
